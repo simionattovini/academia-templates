@@ -1,0 +1,29 @@
+\ProvidesPackage{doc-data}
+% Document Data
+
+\RequirePackage{etoolbox}
+
+\def\subject{Subject Name}
+\def\season{Fall 2027}
+
+\def\profname{Vinícius G. S. Simionatto}
+\def\proftitle{PhD.}
+
+\def\doctitle{My Great Title}
+\def\docsubtitle{My Subtitle}
+\def\docduedate{10/04/2027}
+
+\def\collegename{Pontifícia Universidade Católica de Campinas}
+\def\schoolname{Escola Politécnica}
+\def\facultyname{Faculdade de Engenharia Mecânica}
+
+% Post Processing
+% f stands for 'formatted'
+
+\def\fseason{\ifdefempty{\season}{}{ - \season}}
+
+\def\fproftitleafter{\ifdefempty{\proftitle}{}{, \proftitle}}
+
+\def\fdocsubtitle{\ifdefempty{\docsubtitle}{}{\small \docsubtitle}}
+
+\def\fdocduedate{\ifdefempty{\docduedate}{}{{\small Due date: \docduedate}}}

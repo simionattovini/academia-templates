@@ -1,0 +1,6 @@
+\ProvidesPackage{doc-commands}
+
+%%Numbered environment
+\newcounter{exercicio}
+\newenvironment{ex}[1][]{\refstepcounter{exercicio}
+	\noindent \textbf{Questão \theexercicio)} #1 }{\vspace{4mm}}
