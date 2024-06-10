@@ -3,15 +3,15 @@
 
 \RequirePackage{etoolbox}
 
-\def\subject{Subject Name}
-\def\season{Fall 2027}
+\def\subject{Disciplina}
+\def\season{xS20yy}
 
 \def\profname{Vinícius G. S. Simionatto}
-\def\proftitle{PhD.}
+\def\proftitle{Prof. Dr.}
 
-\def\doctitle{My Great Title}
-\def\docsubtitle{My Subtitle}
-\def\docduedate{10/04/2027}
+\def\doctitle{Avaliação N}
+\def\docsubtitle{\subject}
+\def\docduedate{dd/mm/20yy}
 
 \def\collegename{Pontifícia Universidade Católica de Campinas}
 \def\schoolname{Escola Politécnica}
@@ -26,4 +26,4 @@
 
 \def\fdocsubtitle{\ifdefempty{\docsubtitle}{}{\small \docsubtitle}}
 
-\def\fdocduedate{\ifdefempty{\docduedate}{}{{\small Due date: \docduedate}}}
+\def\fdocduedate{\ifdefempty{\docduedate}{}{{\small \docduedate}}}
